@@ -1,0 +1,58 @@
+@use './variables' as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+
+    .navbar-logo {
+        align-self: center;
+    }
+    .navbar-dropdown {
+        display: none;
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .intro-hero img{
+        max-width: 100%;
+        display: block;
+    }
+
+    .intro-slogan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4rem 1rem 4rem 1rem;
+
+        .intro-slogan__title {
+            padding: 0 1rem 0 1rem;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .intro-slogan__description {
+            padding: 0.5rem 1rem 0 1rem;
+            line-height: 1.2rem;
+        }
+
+        .intro-slogan__calltoaction{
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 2px;
+            border: 2px solid $very-light-gray;
+            background: $dark-violet;
+        }
+    }
+}

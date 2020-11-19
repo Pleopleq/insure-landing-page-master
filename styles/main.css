@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  box-sizing: content-box;
+}
+
+.dark-background-intro {
+  background: url("../images/bg-pattern-intro-left-mobile.svg"), url("../images/bg-pattern-intro-right-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-position-y: 0, 15rem;
+  background-color: #2d2640;
+}
+
+.font-light-gray {
+  color: #fafafa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+}
+.navbar .navbar-logo {
+  align-self: center;
+}
+.navbar .navbar-dropdown {
+  display: none;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+.intro .intro-hero img {
+  max-width: 100%;
+  display: block;
+}
+.intro .intro-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem 4rem 1rem;
+}
+.intro .intro-slogan .intro-slogan__title {
+  padding: 0 1rem 0 1rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.intro .intro-slogan .intro-slogan__description {
+  padding: 0.5rem 1rem 0 1rem;
+  line-height: 1.2rem;
+}
+.intro .intro-slogan .intro-slogan__calltoaction {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: 2px solid #fafafa;
+  background: #2d2640;
+}
+
+/*# sourceMappingURL=main.css.map */
