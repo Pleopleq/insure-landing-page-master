@@ -46,7 +46,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: visible;
 }
 .intro .intro-hero img {
   max-width: 100%;
@@ -78,6 +77,108 @@ body {
   letter-spacing: 2px;
   border: 2px solid #fafafa;
   background: #2d2640;
+}
+
+.perks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.perks .perks-title {
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+.perks .perk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.perks .perk .perk-title {
+  margin-bottom: 1rem;
+  opacity: 0.75;
+}
+.perks .perk .perk-description {
+  padding: 0 1.25rem 0 1.25rem;
+  opacity: 0.5;
+}
+.perks .perk img {
+  padding: 1.25rem 0 1.25rem 0;
+}
+
+.wework {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("../images/bg-pattern-how-we-work-mobile.svg") no-repeat top right;
+  background-color: #2d2640;
+  padding: 3.75rem 1.25rem 3.75rem 1.25rem;
+  margin: 5rem 1.25rem 5rem 1.25rem;
+}
+.wework .wework-calltoaction {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: 2px solid #fafafa;
+  background: #2d2640;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/bg-pattern-footer-mobile.svg") round;
+  background-size: cover;
+  padding: 4rem 1rem 0.75rem 1rem;
+}
+.socials .socials-brand {
+  margin-bottom: 1.5rem;
+}
+.socials .socials-social img {
+  margin-right: 0.5rem;
+}
+
+.gray-line {
+  opacity: 0.5;
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.other-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+.other-pages .links {
+  padding: 1rem 1rem 0 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.other-pages .links .links-title {
+  margin: 0.75rem 0 1rem 0;
+  color: #837d87;
+  opacity: 0.7;
+}
+.other-pages .links .links-list {
+  list-style-type: none;
+}
+.other-pages .links .links-list li {
+  margin-bottom: 0.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */

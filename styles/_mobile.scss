@@ -1,5 +1,23 @@
 @use './variables' as *;
 
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin dark-button {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: 2px solid $very-light-gray;
+    background: $dark-violet;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -15,21 +33,15 @@
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
 
-    .intro-hero img{
+    .intro-hero img {
         max-width: 100%;
         display: block;
     }
 
     .intro-slogan {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         text-align: center;
         padding: 4rem 1rem 4rem 1rem;
 
@@ -44,15 +56,98 @@
             line-height: 1.2rem;
         }
 
-        .intro-slogan__calltoaction{
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            margin-top: 1rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 12px;
-            letter-spacing: 2px;
-            border: 2px solid $very-light-gray;
-            background: $dark-violet;
+        .intro-slogan__calltoaction {
+            @include dark-button;
         }
     }
+}
+
+.perks {
+    @include flex-center;
+
+    .perks-title {
+        font-size: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .perk {
+        @include flex-center;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        .perk-title {
+            margin-bottom: 1rem;
+            opacity: 0.75;
+        }
+        .perk-description {
+            padding: 0 1.25rem 0 1.25rem;
+            opacity: 0.50;
+        }
+    }
+
+    .perk img {
+        padding: 1.25rem 0 1.25rem 0;
+    }
+}
+
+.wework{
+    @include flex-center;
+    text-align: center;
+    background: url("../images/bg-pattern-how-we-work-mobile.svg") no-repeat top right;
+    background-color: $dark-violet;
+    padding: 3.75rem 1.25rem 3.75rem 1.25rem;
+    margin: 5rem 1.25rem 5rem 1.25rem;
+
+    .wework-calltoaction{
+        @include dark-button;
+    }
+}
+
+.socials {
+    @include flex-center;
+    background: url("../images/bg-pattern-footer-mobile.svg") round;
+    background-size: cover;
+    padding: 4rem 1rem 0.75rem 1rem;
+
+    .socials-brand {
+        margin-bottom: 1.50rem;
+    }
+
+    .socials-social img {
+        margin-right: 0.50rem;
+    }
+}
+
+.gray-line {
+    opacity: .5;
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.other-pages {
+    @include flex-center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+
+    .links{
+        padding: 1rem 1rem 0 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        .links-title{
+            margin: 0.75rem 0 1rem 0;
+            color: $dark-grayish-violet;
+            opacity: .7;
+        }
+        .links-list{
+            list-style-type: none;
+        }
+        .links-list li {
+            margin-bottom: 0.75rem;
+        }
+    }
+    
+    
 }
