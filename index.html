@@ -14,21 +14,25 @@
 </head>
 
 <body>
-
   <nav class="navbar">
     <div class="navbar-logo">
       <img src="./images/logo.svg" alt="logo">
     </div>
-    <div class="hamburger">
-      <img src="./images/icon-hamburger.svg" alt="hamburger-menu">
-    </div>
-    <ul class="navbar-dropdown">
-      <li class="navbar-dropdown__item">How we work</li>
-      <li class="navbar-dropdown__item">Blog</li>
-      <li class="navbar-dropdown__item">Account</li>
-      <li class="navbar-dropdown__item">View plans</li>
-    </ul>
+    <button class="hamburger">
+      <img src="./images/icon-hamburger.svg" alt="hamburger-menu-mobile" media="(min-width: 375px)" class="hamburger-logo"> 
+    </button>
   </nav>
+
+  <div class="navbar-dropdown">
+    <div class="dropdown">
+      <div class="dropdown-menu">
+        <a class="dropdown-menu__item">How we work</a>
+        <a class="dropdown-menu__item">Blog</a>
+        <a class="dropdown-menu__item">Account</a>
+        <button class="dropdown-menu__item view-plans font-light-gray">View plans</button>
+      </div>
+    </div>
+  </div>
 
   <main class="intro">
     <div class="intro-hero">
@@ -136,6 +140,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="./app.js"></script>
 </body>
-
 </html>

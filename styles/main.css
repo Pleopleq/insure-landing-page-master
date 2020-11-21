@@ -28,17 +28,54 @@ body {
   color: #fafafa;
 }
 
+.view-plans {
+  padding: 0.5rem 5rem 0.5rem 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid #fafafa;
+  background: #2d2640;
+  letter-spacing: 2px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   padding: 1rem;
 }
+.navbar .hamburger {
+  border: none;
+  background: none;
+}
 .navbar .navbar-logo {
   align-self: center;
 }
-.navbar .navbar-dropdown {
+
+.navbar-dropdown {
   display: none;
+}
+.navbar-dropdown .dropdown {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 75vh;
+  background: url("../images/bg-pattern-mobile-nav.svg") no-repeat bottom right;
+  background-size: contain;
+  background-color: #2d2640;
+  color: #fafafa;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.navbar-dropdown .dropdown .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.navbar-dropdown .dropdown .dropdown-menu .dropdown-menu__item {
+  margin-bottom: 2rem;
 }
 
 .intro {

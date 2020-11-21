@@ -18,17 +18,59 @@
     background: $dark-violet;
 }
 
+.view-plans {
+    padding: 0.5rem 5rem 0.5rem 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid $very-light-gray;
+    background: $dark-violet;
+    letter-spacing: 2px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding: 1rem;
 
+    .hamburger {
+        border: none;
+        background: none;
+    }
+
     .navbar-logo {
         align-self: center;
     }
-    .navbar-dropdown {
-        display: none;
+
+}
+
+.navbar-dropdown {
+    display: none;
+
+    .dropdown{
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        height: 75vh;
+        background: url("../images/bg-pattern-mobile-nav.svg") no-repeat bottom right;
+        background-size: contain;
+        background-color: $dark-violet;
+        color: $very-light-gray;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 1rem;
+
+            .dropdown-menu__item {
+                margin-bottom: 2rem;
+            }
+        }
     }
 }
 
