@@ -21,6 +21,12 @@
     <button class="hamburger">
       <img src="./images/icon-hamburger.svg" alt="hamburger-menu-mobile" media="(min-width: 375px)" class="hamburger-logo"> 
     </button>
+    <div class="navbar-links__desktop">
+        <a class="dropdown-links__item">How we work</a>
+        <a class="dropdown-links__item">Blog</a>
+        <a class="dropdown-links__item">Account</a>
+        <button class="dropdown-links__item navbar-button">View plans</button>
+    </div>
   </nav>
 
   <div class="navbar-dropdown">
@@ -35,9 +41,14 @@
   </div>
 
   <main class="intro">
-    <div class="intro-hero">
-      <img src="./images/image-intro-mobile.jpg" alt="image-intro-family">
+    <div class="intro-hero"> 
+      <picture >
+        
+        <source media="(min-width:1024px)" srcset="./images/image-intro-desktop.jpg">
+          <img src="./images/image-intro-mobile.jpg" alt="image-intro-family">
+      </picture> 
     </div>
+    
 
     <div class="intro-slogan dark-background-intro font-light-gray">
       <h1 class="intro-slogan__title" class="intro-slogan__title">Humanizing your insurance.</h1>

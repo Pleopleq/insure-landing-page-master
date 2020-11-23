@@ -1,0 +1,31 @@
+@use "./variables" as *;
+
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 1rem 3rem 1rem 3rem;
+        
+        .hamburger {
+            display: none;
+        }
+        .navbar-links__desktop {
+            display: flex;
+            display: flex;
+            width: 30em;
+            justify-content: space-around;
+            align-items: center;
+            text-transform: uppercase;
+            color: $dark-grayish-violet;
+            
+            .navbar-button {
+                background: $very-light-gray;
+                border: 1px solid $very-dark-violet;
+                justify-content: space-around;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $very-dark-violet;
+                padding: 0.5rem 2rem 0.5rem 2rem;
+            }
+        }
+    }
+    
+}

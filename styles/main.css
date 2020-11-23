@@ -50,6 +50,9 @@ body {
 .navbar .navbar-logo {
   align-self: center;
 }
+.navbar .navbar-links__desktop {
+  display: none;
+}
 
 .navbar-dropdown {
   display: none;
@@ -216,6 +219,33 @@ body {
 }
 .other-pages .links .links-list li {
   margin-bottom: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 1rem 3rem 1rem 3rem;
+  }
+  .navbar .hamburger {
+    display: none;
+  }
+  .navbar .navbar-links__desktop {
+    display: flex;
+    display: flex;
+    width: 30em;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    color: #837d87;
+  }
+  .navbar .navbar-links__desktop .navbar-button {
+    background: #fafafa;
+    border: 1px solid #2b272f;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2b272f;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
