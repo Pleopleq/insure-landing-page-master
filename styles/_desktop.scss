@@ -1,0 +1,63 @@
+@use "./variables" as *;
+
+@media (min-width: 1110px) {
+.intro {
+    margin-bottom: 12rem;
+        .intro-content {
+            width: 100vw;
+
+            .intro-hero{
+                order: 1;
+            }
+
+            .intro-hero picture  img{
+                top: 5rem;
+                position: absolute;
+                right: 8rem;
+                top: 7rem;
+            }
+        
+            .intro-slogan {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                padding-left: 10rem;
+                padding-right: 48rem;
+                height: 40vh;
+
+                .intro-slogan__calltoaction {
+                    margin-left: 14px;
+                }
+            }
+        }
+        
+    }
+
+    .perks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 4rem 0 4rem;
+        
+        .perk {
+            align-items: start;
+            
+            .perk-description {
+                padding: 0 3rem 0 0;
+                text-align: justify;
+            }
+        }
+
+        .perks-title {
+            font-size: 3em;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 18px;
+    }
+}

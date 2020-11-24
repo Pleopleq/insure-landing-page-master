@@ -79,7 +79,10 @@
 }
 
 .intro {
-    @include flex-center;
+    
+    .intro-content {
+        @include flex-center;
+    }
 
     .intro-hero img {
         max-width: 100%;

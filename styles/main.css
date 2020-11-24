@@ -81,7 +81,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.intro {
+.intro .intro-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -245,6 +245,65 @@ body {
     font-weight: 700;
     color: #2b272f;
     padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1110px) {
+  .intro {
+    margin-bottom: 12rem;
+  }
+  .intro .intro-content {
+    width: 100vw;
+  }
+  .intro .intro-content .intro-hero {
+    order: 1;
+  }
+  .intro .intro-content .intro-hero picture img {
+    top: 5rem;
+    position: absolute;
+    right: 8rem;
+    top: 7rem;
+  }
+  .intro .intro-content .intro-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 10rem;
+    padding-right: 48rem;
+    height: 40vh;
+  }
+  .intro .intro-content .intro-slogan .intro-slogan__calltoaction {
+    margin-left: 14px;
+  }
+
+  .perks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 4rem 0 4rem;
+  }
+  .perks .perk {
+    align-items: start;
+  }
+  .perks .perk .perk-description {
+    padding: 0 3rem 0 0;
+    text-align: justify;
+  }
+  .perks .perks-title {
+    font-size: 3em;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 18px;
   }
 }
 
