@@ -84,7 +84,7 @@
         @include flex-center;
     }
 
-    .intro-hero img {
+    .intro-content__hero img {
         max-width: 100%;
         display: block;
     }
@@ -113,6 +113,10 @@
 
 .perks {
     @include flex-center;
+
+    .perks-line {
+        display: none;
+    }
 
     .perks-title {
         font-size: 2rem;

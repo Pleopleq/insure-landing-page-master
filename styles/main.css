@@ -87,7 +87,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.intro .intro-hero img {
+.intro .intro-content__hero img {
   max-width: 100%;
   display: block;
 }
@@ -124,6 +124,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.perks .perks-line {
+  display: none;
 }
 .perks .perks-title {
   font-size: 2rem;
@@ -246,47 +249,70 @@ body {
     color: #2b272f;
     padding: 0.5rem 2rem 0.5rem 2rem;
   }
-
-  .intro-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 }
-@media (min-width: 1110px) {
+@media (min-width: 1200px) {
   .intro {
-    margin-bottom: 12rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #2d2640;
+    height: 75vh;
+    margin-bottom: 15rem;
   }
   .intro .intro-content {
-    width: 100vw;
+    flex-direction: row-reverse;
   }
-  .intro .intro-content .intro-hero {
-    order: 1;
+  .intro .intro-content .intro-content__hero {
+    transform: translate(-21%, 20%);
+    padding-left: 2rem;
   }
-  .intro .intro-content .intro-hero picture img {
-    top: 5rem;
-    position: absolute;
-    right: 8rem;
-    top: 7rem;
+  .intro .intro-content .intro-content__hero img {
+    max-width: none;
+    display: block;
   }
-  .intro .intro-content .intro-slogan {
-    display: flex;
-    flex-direction: column;
+  .intro .intro-slogan {
     align-items: flex-start;
     text-align: left;
-    padding-left: 10rem;
-    padding-right: 48rem;
-    height: 40vh;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background: none;
   }
-  .intro .intro-content .intro-slogan .intro-slogan__calltoaction {
-    margin-left: 14px;
+  .intro .intro-slogan .intro-slogan__line {
+    display: block;
+    margin: 1rem 1rem 2rem 1rem;
+  }
+  .intro .intro-slogan .intro-slogan__title {
+    font-size: 3rem;
+  }
+  .intro .intro-slogan .intro-slogan__description {
+    text-align: justify;
+    line-height: 1.2rem;
+  }
+  .intro .intro-slogan .intro-slogan__calltoaction {
+    margin-left: 18px;
+  }
+
+  .intro::before {
+    position: absolute;
+    content: url("../images/bg-pattern-intro-left-desktop.svg");
+    top: initial;
+    bottom: -5rem;
+    left: 0;
+  }
+
+  .intro::after {
+    position: absolute;
+    content: url("../images/bg-pattern-intro-right-desktop.svg");
+    right: 0;
   }
 
   .perks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 4rem 0 4rem;
+  }
+  .perks .perks-line {
+    opacity: 0.5;
+    margin-right: 15rem;
   }
   .perks .perk {
     align-items: start;
