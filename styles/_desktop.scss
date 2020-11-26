@@ -5,14 +5,16 @@
         display: flex;
         flex-direction: row;        
         background-color: $dark-violet;
-        height: 75vh;
+        height: 65vh;
         margin-bottom: 15rem;
         
         .intro-content {
+            width: 100vw;
             flex-direction: row-reverse;
+            justify-content: space-around;
 
             .intro-content__hero{
-                transform: translate(-21%, 20%);
+                transform: translate(-21%, 26%);
                 padding-left: 2rem;
             }
 
@@ -36,14 +38,17 @@
 
             .intro-slogan__title {
                 font-size: 3rem;
+                width: 400px;
             }
 
             .intro-slogan__description {
                 text-align: justify;
                 line-height: 1.2rem;
+                width: 532px;
             }
 
             .intro-slogan__calltoaction {
+                margin-top: 2rem;
                 margin-left: 18px;
             }
         }

@@ -261,14 +261,16 @@ body {
     display: flex;
     flex-direction: row;
     background-color: #2d2640;
-    height: 75vh;
+    height: 65vh;
     margin-bottom: 15rem;
   }
   .intro .intro-content {
+    width: 100vw;
     flex-direction: row-reverse;
+    justify-content: space-around;
   }
   .intro .intro-content .intro-content__hero {
-    transform: translate(-21%, 20%);
+    transform: translate(-21%, 26%);
     padding-left: 2rem;
   }
   .intro .intro-content .intro-content__hero img {
@@ -288,12 +290,15 @@ body {
   }
   .intro .intro-slogan .intro-slogan__title {
     font-size: 3rem;
+    width: 400px;
   }
   .intro .intro-slogan .intro-slogan__description {
     text-align: justify;
     line-height: 1.2rem;
+    width: 532px;
   }
   .intro .intro-slogan .intro-slogan__calltoaction {
+    margin-top: 2rem;
     margin-left: 18px;
   }
 
