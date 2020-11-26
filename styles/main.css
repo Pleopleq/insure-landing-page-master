@@ -249,6 +249,12 @@ body {
     color: #2b272f;
     padding: 0.5rem 2rem 0.5rem 2rem;
   }
+
+  .wework {
+    margin: 6rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 @media (min-width: 1200px) {
   .intro {
@@ -308,9 +314,10 @@ body {
   .perks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 4rem 0 4rem;
+    padding: 0 6rem 0 6rem;
   }
   .perks .perks-line {
+    display: block;
     opacity: 0.5;
     margin-right: 15rem;
   }
@@ -325,6 +332,50 @@ body {
     font-size: 3em;
     grid-column-start: 1;
     grid-column-end: 4;
+  }
+
+  .wework {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    background: url("../images/bg-pattern-how-we-work-desktop.svg") no-repeat top right;
+    background-color: #2d2640;
+  }
+  .wework .wework-title {
+    text-align: left;
+    max-width: 280px;
+  }
+  .wework .wework-calltoaction {
+    background: transparent;
+  }
+
+  footer {
+    padding: 0 5rem 0 5rem;
+    background: url("../images/bg-pattern-footer-desktop.svg") no-repeat top left;
+    background-color: #fafafa;
+  }
+  footer .gray-line {
+    margin-top: 0;
+  }
+  footer .socials {
+    flex-direction: row;
+    justify-content: space-between;
+    background: none;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  footer .socials .socials-brand {
+    margin: 0;
+  }
+  footer .other-pages {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+  }
+  footer .other-pages .links:nth-child(4) {
+    margin-right: 12rem;
   }
 }
 @media (min-width: 1440px) {
